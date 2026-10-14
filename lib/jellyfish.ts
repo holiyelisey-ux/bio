@@ -53,7 +53,7 @@ export const species: Species[] = [
     altName: 'Аурелия',
     latin: 'Aurelia aurita',
     accent: '#c9b8ff',
-    image: '/images/aurelia-alpha.png',
+    image: '/bio/images/aurelia-alpha.png',
     tagline: 'Самая распространённая медуза планеты',
     intro:
       'Прозрачный купол с четырьмя сиреневыми «подковами» — визитная карточка аурелии. Её можно встретить почти во всех морях умеренных и тропических широт, включая Чёрное, Балтийское и Белое моря.',
