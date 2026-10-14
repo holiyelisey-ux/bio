@@ -27,7 +27,12 @@ export function LivingJellyfish({
   return (
     <div
       className={cn('jelly-float relative', className)}
-      style={{ '--dur': `${duration}s`, '--delay': `${-delay}s` } as React.CSSProperties}
+      style={
+        {
+          '--dur': `${duration}s`,
+          '--delay': `${-delay}s`,
+        } as React.CSSProperties
+      }
     >
       <div className="jelly-sway">
         <div className="jelly-pulse relative aspect-[768/1376] w-full">
@@ -36,8 +41,9 @@ export function LivingJellyfish({
             className="absolute inset-x-[10%] top-[8%] h-[35%] rounded-full opacity-40 blur-3xl"
             style={{ background: accent }}
           />
+
           <Image
-            src={src || '/placeholder.svg'}
+            src={src || '/bio/placeholder.svg'}
             alt={alt}
             fill
             priority={priority}
