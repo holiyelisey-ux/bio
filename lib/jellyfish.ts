@@ -160,7 +160,7 @@ export const species: Species[] = [
     altName: 'Хризаора',
     latin: 'Chrysaora fuscescens',
     accent: '#f6b84a',
-    image: '/images/chrysaora-alpha.png',
+    image: '/bio/images/chrysaora-alpha.png',
     tagline: 'Золотой купол и метры кружевных рук',
     intro:
       'Янтарный зонтик и длинные спирально закрученные ротовые лопасти делают хризаору одной из самых красивых медуз. Она живёт у тихоокеанского побережья Северной Америки — от Канады до Мексики.',
@@ -259,7 +259,7 @@ export const species: Species[] = [
     altName: 'Цианея волосистая',
     latin: 'Cyanea capillata',
     accent: '#ff6375',
-    image: '/images/cyanea-alpha.png',
+    image: '/bio/images/cyanea-alpha.png',
     tagline: 'Крупнейшая медуза в мире',
     intro:
       'Гигант холодных морей. Щупальца львиной гривы могут быть длиннее синего кита, а купол — больше двух метров в диаметре. Встречается в Арктике, северной Атлантике и Тихом океане, в том числе в Баренцевом и Белом морях.',
