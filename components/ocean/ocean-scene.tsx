@@ -16,8 +16,12 @@ export function OceanScene() {
 
   function dive(slug: string) {
     if (selected) return
+
     setSelected(slug)
-    window.setTimeout(() => router.push(`/bio/meduza/${slug}`), 1100)
+
+    window.setTimeout(() => {
+      router.push(`/meduza/${slug}`)
+    }, 1100)
   }
 
   return (
@@ -68,8 +72,8 @@ export function OceanScene() {
               key={s.slug}
               type="button"
               onClick={() => dive(s.slug)}
-              onMouseEnter={() => router.prefetch(`/bio/meduza/${s.slug}`)}
-              onFocus={() => router.prefetch(`/bio/meduza/${s.slug}`)}
+              onMouseEnter={() => router.prefetch(`/meduza/${s.slug}`)}
+              onFocus={() => router.prefetch(`/meduza/${s.slug}`)}
               aria-label={`${s.name} — открыть строение и факты`}
               initial={{ opacity: 0, y: 80 }}
               animate={{ opacity: dimmed ? 0 : 1, y: 0 }}
@@ -121,7 +125,8 @@ export function OceanScene() {
         </p>
 
         <h1 className="text-balance font-serif text-4xl font-medium leading-none text-white md:text-7xl">
-          Медузы: <span className="italic text-primary">три жизни</span> в толще воды
+          Медузы:{' '}
+          <span className="italic text-primary">три жизни</span> в толще воды
         </h1>
 
         <p className="flex items-center gap-2 text-sm text-cyan-50/80">
@@ -129,7 +134,6 @@ export function OceanScene() {
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex size-2 rounded-full bg-primary" />
           </span>
-
           Нажмите на медузу, чтобы погрузиться
         </p>
       </motion.header>
